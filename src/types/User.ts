@@ -1,5 +1,5 @@
 
-export interface Addres {
+export interface Address {
     street: string,
     city: string,
     zipCode: string
@@ -8,7 +8,7 @@ export interface Addres {
 export interface Profile {
     name: string,
     email: string,
-    addres: Addres
+    address: Address
 }
 
 export interface NotificationSettings {
@@ -27,7 +27,7 @@ export interface User {
     username: string,
     profile: Profile,
     settings: Settings,
-    role: string[] // array of strings
+    roles: string[] // array of strings
 }
 
 
