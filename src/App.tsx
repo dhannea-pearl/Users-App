@@ -1,14 +1,10 @@
 import { useUsers } from "./hooks/useUsers"
+import { HomePage } from "./pages/HomePage"
 
 const App = () => {
 
-  const { data, isLoading } = useUsers()
-  console.log(data)
-
   return(
-    <>
-      <h1>{isLoading ? "Laddar..." : `${data?.length} användare`}</h1>
-    </>
+    <HomePage></HomePage>
 
   )
 }
