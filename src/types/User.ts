@@ -18,7 +18,7 @@ export interface NotificationSettings {
 
 export interface Settings{
     theme: string,
-    notification: NotificationSettings
+    notifications: NotificationSettings
 }
 
 
