@@ -7,10 +7,14 @@ interface UserListProps {
 
 export function UserList({users}: UserListProps){
 
+    // Sort by initial
+    const sortedUsers = [...users].sort((a, b) => 
+    a.username.localeCompare(b.username))
+
     return(
-        <div>
+        <div className="grid grid-cols-1 gap-4 md:grid-cols-2 lg:grid-cols-3">
             {
-                users.map(user => (
+                sortedUsers.map(user => (
                     <UserCard key={user.id} user={user} ></UserCard>
                 ))
             }
